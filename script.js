@@ -50,5 +50,6 @@ function countDown() {
         clearInterval(timerId)
         alert("Game Over _ Final Score: " + result)
         clicker = 0;
+        currentTime = 60;
     }
 }
