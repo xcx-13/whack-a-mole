@@ -1,0 +1,32 @@
+@media screen and (max-width: 325px) {
+    .grid-item {
+        height: 20px;
+    }
+
+    .blume {
+        width: 1px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .grid-item {
+        height: 50px;
+    }
+
+    .blume {
+        width: 10px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .grid-item {
+        height: 100px;
+    }
+
+    .blume {
+        width: 50px;
+        height: 40px;
+    }
+}

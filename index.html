@@ -1,74 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whac-a-mole</title>
-    <link rel="Icon" type="Image/x-icon" href="img/icon.png">
-    <link rel="stylesheet" href="style.css">
+    <title>Whack-A-Mole</title>
+    <link rel="Icon" type="Image/x-icon" href="style/img/icon.png">
+    <!-- <link rel="stylesheet" href="style/tablet.css"> -->
+    <!-- <link rel="stylesheet" href="style/mobile.css"> -->
+    <link rel="stylesheet" href="style/index.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <div id="window">
-        <div id="scoreWindow">
-            <h2>Your Score:</h2>
-            <h2 id="score">0</h2>
-        </div>
+    <h1>Whack A Mole!</h1>
 
-        <div id="timeWindow">
-            <h2>Time Left:</h2>
-            <h2 id="time-left">60</h2>
-        </div>
+    <div class="grid-window">
+        <h2>Your Score:</h2>
+        <h2 id="score"></h2>
+
+        <h2>Time Left:</h2>
+        <h2 id="timer"></h2>
     </div>
 
-    <div id="garden-div">
-        <div class="row-div vertical-line">
-            <div class="square" id="1">
-                <img class="blume" src="img/blumentopf.png" alt="">
-            </div>
-            <div class="square horizontal-line" id="2">
-                <img class="blume" src="img/blumentopf.png" alt="">
+    <div id="gridContainer" class="grid-container">
 
-            </div>
-            <div class="square horizontal-line" id="3">
-                <img class="blume" src="img/blumentopf.png" alt="">
-
-            </div>
-        </div>
-        <div class="row-div vertical-line">
-            <div class="square" id="4">
-                <img class="blume" src="img/blumentopf.png" alt="">
-
-            </div>
-            <div class="square horizontal-line" id="5">
-                <img class="blume" src="img/blumentopf.png" alt="">
-
-            </div>
-            <div class="square horizontal-line" id="6">
-                <img class="blume" src="img/blumentopf.png" alt="">
-
-            </div>
-        </div>
-        <div class="row-div">
-            <div class="square" id="7">
-                <img class="blume" src="img/blumentopf.png" alt="">
-
-            </div>
-            <div class="square horizontal-line" id="8">
-                <img class="blume" src="img/blumentopf.png" alt="">
-
-            </div>
-            <div class="square horizontal-line" id="9">
-                <img class="blume" src="img/blumentopf.png" alt="">
-
-            </div>
-        </div>
     </div>
 
-    <button onclick="moveMole()">Start</button>
+    <div class="btn-container">
+        <button onclick="gameStart()">Start</button>
+    </div>
 
 </body>
 
